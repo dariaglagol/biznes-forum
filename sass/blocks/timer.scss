@@ -1,0 +1,75 @@
+.timer {
+  position: relative;
+  margin-top: 72px;
+}
+
+.timer__text {
+  margin-bottom: 21px;
+  font-family: $font-plain;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.timer__wrap {
+  position: absolute;
+  z-index: 10;
+  width: 230px;
+  padding: 16px 12px 44px 19px;
+  font-family: $font-insert-plain;
+  font-size: 35px;
+  line-height: 40px;
+  font-weight: bold;
+  color: #ffffff;
+  border: 2px solid;
+  border-color: rgba(183, 22, 66, 0.5);
+  text-align: center;
+}
+
+.timer__item {
+  position: relative;
+}
+
+.timer__item--days::after {
+  content: "дней";
+  position: absolute;
+  bottom: -22px;
+  left: -2px;
+  font-family: $font-insert-plain;
+  font-size: 15px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #ffffff;  
+}
+
+.timer__item--hours::after {
+  content: "часов";
+  position: absolute;
+  bottom: -22px;
+  left: -8px;
+  font-family: $font-insert-plain;
+  font-size: 15px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #ffffff; 
+}
+
+.timer__item--minutes::after {
+  content: "минут";
+  position: absolute;
+  bottom: -22px;
+  left: -8px;
+  font-family: $font-insert-plain;
+  font-size: 15px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@media(max-width: $tablet) {
+  .timer {
+    order: 5;
+  }
+}

@@ -1,0 +1,211 @@
+.reg {
+  display: none;
+  position: fixed;
+  width: 350px;
+  max-height: 600px;
+  overflow-y: scroll;
+  top: 140px;
+  left: 50%;
+  margin-left: -150px;
+  padding-bottom: 20px;
+  background-color: #2b2c2f;
+}
+
+.reg_close {
+  position: relative;
+}
+
+.reg_close::before,
+.reg_close::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 306px;
+  width: 27px;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 1px;
+}
+.reg_close::before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.reg_close::after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.reg_header {
+  margin: 0px;
+  font-family: $font-demi;
+  font-size: 30px;
+  line-height: 36px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.reg_first-form,
+.reg_second-form {
+  padding: 5px 20px;
+  border: none;
+}
+
+.reg_second-form {
+  display: none;
+}
+
+.reg_label {
+  display: block;
+  padding-bottom: 7px;
+  margin: 0px;
+  font-family: $font-form;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  &--sex {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 7px;
+    font-family: $font-form;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    letter-spacing: 1px;
+  }
+}
+
+.reg_input {
+  padding: 8px 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  font-family: $font-form;
+  font-size: 16px;
+  color: #ffffff;
+  background: transparent;
+  box-shadow: none;
+  border: 1px solid #fff;
+  border-radius: 0px;
+  &--sex {
+    display: none;
+  }
+  &--org {
+    width: 78%;
+  }
+}
+
+.reg_sex-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.reg_sex-desc {
+  width: 100%;
+}
+
+.reg_input--sex + .reg_label--sex::before {
+  content: "";
+  position: absolute;
+  right: -24px;
+  top: 4px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ffffff;
+}
+
+.reg_input--sex:checked + .reg_label--sex::after {
+  content: "";
+  position: absolute;
+  right: -24px;
+  top: 4px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+}
+
+.reg_label--sex[for="sex-female"] {
+ margin-right: 24px; 
+}
+
+.reg_org-block {
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.reg_select {
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+  option {
+    color: #000000;
+  }
+}
+
+.reg_submit {
+  display: block;
+  margin: 0 auto;
+  padding: 5px 10px;
+  font-family: $font-form;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  background: $plain-pink;
+  box-shadow: none;
+  border: none;
+}
+
+.reg_second-form {
+  .reg_select {
+    margin-bottom: 15px;
+  }
+}
+
+.reg_agreement {
+  display: none;
+}
+
+.reg_agreement-label {
+  position: relative;
+  display: block;
+  padding-left: 20px;
+  padding-bottom: 15px;
+  font-family: $font-form;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+  
+  a {
+    color: #ffffff;
+  }
+}
+
+.reg_agreement + .reg_agreement-label::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ffffff;
+}
+
+.reg_agreement:checked + .reg_agreement-label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0px;
+  width: 15px;
+  height: 15px;
+  background: url(../img/icon-checkbox.png) no-repeat center;
+  background-size: contain;
+}

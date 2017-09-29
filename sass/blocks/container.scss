@@ -1,0 +1,11 @@
+.container {
+  position: relative;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+@media(max-width:$tablet) {
+  .container {
+    width: 280px;
+  }
+}

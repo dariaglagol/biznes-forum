@@ -1,0 +1,49 @@
+.header {
+  padding-bottom: 3px;
+  background: url("../img/bg-gradient.png") no-repeat bottom, url(../img/bg-main-people.png) no-repeat center,
+    url(../img/bg-main.jpg) no-repeat center;
+  background-size: contain, cover, cover;
+}
+
+.header__take-part {
+  max-width: 225px;
+  padding-top: 8px;
+  text-align: right;
+}
+
+.header__phone {
+  position: relative;
+  display: inline-block;
+  padding-right: 28px;
+  font-family: $font-insert-plain;
+  font-size: 18px;
+  line-height: 26px;
+  color: #969696;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: -22px;
+    width: 18px;
+    height: 23px;
+    background: url("../img/icon-phone.png") no-repeat center;
+    background-size: contain;
+  }
+}
+
+.header__call {
+  margin: 0px;
+  padding: 14px 24px 0px 18px;
+  border: none;
+  border-bottom: 5px solid #b71642;
+  font-family: $font-plain;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: transparent;
+  box-shadow: none;
+  cursor: pointer;
+}

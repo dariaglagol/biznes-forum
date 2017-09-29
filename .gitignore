@@ -1,0 +1,13 @@
+.DS_Store
+.idea
+*.ai
+*.log
+*.pdf
+*.psd
+*.mp4
+*.sublime*
+css/*.css
+node_modules/
+npm-debug.*
+Thumbs.db
+video/*.mp4

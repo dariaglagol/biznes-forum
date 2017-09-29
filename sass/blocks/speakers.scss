@@ -1,0 +1,90 @@
+.speakers {
+  position: relative;
+  padding-top: 37px;
+  padding-bottom: 69px;
+  background: url("../img/bg-speakers-ball.png") no-repeat top left,
+    url(../img/bg-speakers-ball-bottom.png) no-repeat bottom right;
+  background-color: #aeaeb8;
+  
+}
+
+.speakers__header {
+  @include header-typography;
+  margin-bottom: 57px;
+  color: #b71642;
+}
+
+.speakers__wrap-outer {
+  padding-top: 45px;
+  background-color: rgba(139, 139, 146, 0.5);
+}
+
+.speakers__wrap-inner {
+  display: flex;
+  justify-content: center; //после 6 спикера убрать!
+  flex-wrap: wrap;
+  width: 770px;
+  margin: 0 auto;
+  padding-bottom: 95px;
+}
+
+.speakers__item {
+  position: relative;
+  margin-bottom: 135px;
+  margin-right: 60px; //после 6 спикера убрать!
+  cursor: pointer;
+  img {
+    box-shadow: 4px 12px 36px 5px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.speakers__item-desc {
+  position: absolute;
+  top: 250px;
+  left: 7px;
+  z-index: 10;
+  width: 180px;
+  margin: 0 auto;
+  margin-top: -29px;
+  padding: 14px 6px;
+  font-family: $futura-plain;
+  background-color: #f0f0f0;
+}
+
+.speakers__item--name {
+  font-size: 15px;
+  line-height: 17px;
+  color: $plain-pink;
+  text-transform: uppercase;
+  span {
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing:2px;
+  }
+}
+
+.speakers__item--achive,
+.speakers__item--exp,
+.speakers__item--position {
+  font-size: 16px;
+  padding-top: 12px;
+  display: block;
+}
+
+.speakers__item--achive,
+.speakers__item--exp {
+  display: none;
+}
+
+.speakers__item-desc:hover {
+  left: -11px;
+  width: 214px;
+  padding: 13px;
+  transition: all 0.1s ease-in-out 0.1s;
+}
+
+.speakers__item-desc:hover .speakers__item--achive,
+.speakers__item-desc:hover .speakers__item--exp {
+  display: block;
+  transition: all 0.3s ease-in-out 0.3s;
+}

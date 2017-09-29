@@ -1,0 +1,21 @@
+@mixin btn-typography () {
+  font-family: $font-plain;
+  padding: 7px 20px;
+  font-size: 21px;
+  line-height: 22px;
+  color: #ffffff;
+  border: none;
+  box-shadow: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+@mixin header-typography {
+  font-family: $font-plain;
+  font-size: 40px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+}

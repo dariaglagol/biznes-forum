@@ -1,0 +1,22 @@
+.org {
+  background-color: #101012;
+  padding-bottom: 45px;
+}
+
+.org__header {
+  margin: 0px;
+  padding-top: 153px;
+  padding-bottom: 35px;
+  font-family: "Franklin Gothic Medium", "Helvetica", sans-serif;
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.org__list-wrap {
+  display: flex;
+  justify-content: center;
+}

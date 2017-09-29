@@ -1,0 +1,47 @@
+.footer {
+  padding-bottom: 42px;
+  background-color: #666370;
+}
+
+.footer__inner-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px;
+}
+
+.footer__wrap {
+  padding-top: 45px;
+  background-color: #817f88;
+}
+
+.footer__header {
+  @include header-typography;
+  font-size: 30px;
+  margin: 0px;
+  padding-bottom: 36px;
+  color: #f9faff;
+}
+
+.footer__address-block {
+  padding: 0px 16px; 
+  font-family: $font-plain;
+  font-size: 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+  .ya-share2__container_size_m .ya-share2__icon {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.footer__address-desc,
+.footer__reg-desc,
+.footer__share-buttons {
+  margin: 0px;
+  line-height: 34px;
+  letter-spacing: 2px;
+  span {
+    letter-spacing: 3px;
+    font-size: 18px;
+  }
+}
