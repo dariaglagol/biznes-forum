@@ -76,3 +76,9 @@
 .features__btn-get-programm {
   padding-right: 66px;
 }
+
+@media(max-width: $tablet) {
+  .features__desc {
+    width: 280px;
+  }
+}

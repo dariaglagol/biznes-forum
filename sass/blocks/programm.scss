@@ -62,3 +62,30 @@
   line-height: 20px;
   color: #272846;
 }
+
+@media(max-width: $tablet) {
+  .programm__items-inner {
+    flex-wrap: wrap;
+    padding: 25px 20px;
+  }
+  .programm__item-left,
+  .programm__item-right {
+    flex-basis: 280px;
+  }
+  .programm__items-wrap {
+    padding: 0 20px;
+    padding-top: 30px;
+  }
+  .programm__items-inner:after {
+    top: 47%;
+    width: 82%;
+    height: 2px;
+  }
+  .programm__item-title {
+    font-size: 28px;
+    letter-spacing: 0px;
+  }
+  .programm__item-left {
+    margin-bottom: 35px;
+  }
+ }

@@ -1,5 +1,4 @@
 .partners {
-  background-color: #101012;
   padding-bottom: 45px;
 }
 
@@ -11,12 +10,12 @@
   font-size: 20px;
   line-height: 22px;
   text-align: center;
-  color: #ffffff;
+  color: #000;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
 .partners__list-wrap {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
