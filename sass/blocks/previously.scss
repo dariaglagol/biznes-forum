@@ -22,5 +22,7 @@
 }
 
 @media(max-width: $tablet) {
-  
+  .previously--balls {
+    background-size: contain;
+  }
 } 

@@ -1,6 +1,5 @@
 .main-nav {
   padding-top: 20px;
-//  background-color: #151718;
 }
 
 .main-nav__fixing {
@@ -58,6 +57,9 @@
   }
   .main-nav {
     padding-top: 0px;
+  }
+  .main-nav__inner {
+    order: 2;
   }
   .main-nav__item-list {
     display: none;

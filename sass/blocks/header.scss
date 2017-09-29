@@ -47,3 +47,35 @@
   box-shadow: none;
   cursor: pointer;
 }
+
+@media(max-width: $tablet) {
+  .header {
+    background-size: cover;
+  }
+//  .header__take-part {
+//    max-width: 280px;
+//  }
+//  .header__phone {
+//    padding: 0;
+//    margin: 0 10px;
+//    font-size: 16px;
+//  }
+//  .header__call {
+//    padding: 14px 10px 0px 10px;
+//    font-size: 16px;
+//  }
+  .header__take-part {
+    padding-top: 0px;
+    text-align: left;
+    order: 1;
+  }
+  .header__phone {
+    padding: 0;
+    margin-left: 22px;
+    font-size: 16px;
+  }
+  .header__call {
+    padding: 5px 10px 0px 10px;
+    font-size: 16px;
+  }
+}
