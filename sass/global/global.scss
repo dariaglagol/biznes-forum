@@ -28,7 +28,7 @@ body.open{
 }
 body.open .reg{
 	display:block;
-	z-index:200;
+	z-index:10000;
   animation-name: fadeIn;
 }
 body.open:after{
