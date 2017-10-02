@@ -5,7 +5,7 @@
   background: url("../img/bg-speakers-ball.png") no-repeat top left,
     url(../img/bg-speakers-ball-bottom.png) no-repeat bottom right;
   background-color: #aeaeb8;
-  
+  background-size: auto;
 }
 
 .speakers__header {
@@ -104,5 +104,14 @@
   }
   .speakers__item {
     margin-right: 0px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .speakers {
+    background-size: contain;
+  }
+  .speakers__item {
+    margin-bottom: 145px;
   }
 }

@@ -115,7 +115,7 @@
 		/**
 		 * Widths of all items.
 		 */
-		this._widths = [310];
+		this._widths = ['auto'];
 
 		/**
 		 * Invalidated parts within the update process.
@@ -209,7 +209,7 @@
 		dragEndSpeed: false,
 
 		responsive: {},
-		responsiveRefreshRate: 200,
+		responsiveRefreshRate: 100,
 		responsiveBaseElement: window,
 
 		fallbackEasing: 'swing',
