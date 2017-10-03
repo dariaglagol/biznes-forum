@@ -36,3 +36,9 @@
     height: 100%;
   }
 }
+
+@media(min-width:$tablet) and (max-width: $desktop) {
+  .previously_video iframe {
+    width: 620px;
+  }
+}

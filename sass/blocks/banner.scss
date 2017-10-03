@@ -86,3 +86,9 @@
     order: 4;
   }
 }
+
+@media(min-width: $tablet) and (max-width: $desktop) {
+  .banner__button-take-part {
+    top: 430px;
+  }
+}

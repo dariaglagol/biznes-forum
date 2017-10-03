@@ -6,6 +6,12 @@
 
 @media(max-width:$tablet) {
   .container {
-    width: 280px;
+    max-width: 280px;
+  }
+}
+
+@media(min-width:$tablet) and (max-width: $desktop) {
+  .container {
+    max-width: 620px;
   }
 }

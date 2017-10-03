@@ -50,7 +50,7 @@
   }
 }
 
-@media(max-width: $tablet) {
+@media(max-width: 768px) {
   .main-nav__fixing {
     position: static;
     margin-left: 0px;
@@ -101,3 +101,17 @@
     background-color: rgb(129, 127, 136);
   }
 }
+
+//@media(min-width: $tablet) and (max-width: $desktop) {
+//  .main-nav__pict {
+//    width: 96px;
+//    height: 41px;
+//  }
+//  .main-nav__item-list {
+//    padding-left: 25px;
+//  }
+//  .main-nav__item {
+//    padding-top: 30px;
+//    font-size: 13px;
+//  }
+//}
