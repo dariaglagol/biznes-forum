@@ -69,12 +69,18 @@
   }
 }
 
-@media(min-width: $tablet) and (max-width: $desktop) {
+@media(min-width: $tablet) and (max-width: 768px) {
   .header__take-part {
     text-align: left;
   }
   .header__phone {
     height: auto;
     margin-left: 20px;
+  }
+}
+
+@media(min-width:769px) and (max-width: $desktop) {
+  .header__take-part {
+    max-width: 175px;
   }
 }
