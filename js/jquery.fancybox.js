@@ -1409,7 +1409,11 @@
 				rez.top  += viewport.y;
 				rez.left += viewport.x;
 			}
-
+//jaefhjsdkfdjfjsdfbsjhdf
+//sdjfhsjdfbjsdbfhjsdbfhbshj
+//jsdbfjsbdfhsfjdbhjksb
+//jsdbfjhsbdhjfbshjfvhsdv
+//fjskdbfjsbfdjhhfjvjds
 			rez.top  = getValue(Math.max(rez.top,  rez.top  + ((viewport.h - height) * current.topRatio)));
 			rez.left = getValue(Math.max(rez.left, rez.left + ((viewport.w - width)  * current.leftRatio)));
 

@@ -9,7 +9,7 @@
   margin-left: -400px;
   padding: 20px;
   background-color: #2c2c31;
-  box-shadow: 10px 10px 40px 14px rgba(0, 0, 0, 0.6); 
+  box-shadow: 10px 10px 40px 14px rgba(0, 0, 0, 0.6);
 }
 
 .person-popup--hidden {
@@ -110,4 +110,42 @@
   font-size: 18px;
   line-height: 24px;
   color: #fff;
+}
+
+@media(max-width: $tablet) {
+  .person-popup {
+    top: 7%;
+    width: 320px;
+    margin-left: -160px;
+    video {
+      width: 280px;
+    }
+  }
+  .person-popup__close::after {
+    right: -279px;
+  }
+  .person-popup__wrap {
+    flex-wrap: wrap;
+  }
+  .person-popup__photo-block {
+    height: auto;
+    padding-top: 27px;
+    margin: 0 auto;
+  }
+  .person-popup__name {
+    width: 200px;
+    font-size: 21px;
+  }
+  #suhanov-speaker {
+    top: 15%;
+  }
+  #magirovskij {
+    top: 34%;
+  }
+  #tarabykina {
+    top: 50%;
+  }
+  #korobkina {
+    top: 75%;
+  }
 }
