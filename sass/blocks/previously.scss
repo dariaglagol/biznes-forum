@@ -40,5 +40,9 @@
 @media(min-width:$tablet) and (max-width: $desktop) {
   .previously_video iframe {
     width: 620px;
+    height: 336px;
+  }
+  .previously_header {
+    letter-spacing: 1px;
   }
 }

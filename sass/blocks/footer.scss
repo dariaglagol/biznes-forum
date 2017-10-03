@@ -93,4 +93,31 @@
   .footer__inner-wrap {
     flex-wrap: wrap;
   }
+  .footer__photo-block {
+    order: 1;
+    img {
+      height: 210px;
+      width: 325px;
+    }
+  }
+  .footer__map-block {
+    order: 2;
+  }
+  .footer__address-block {
+    order: 3;
+  }
+  .footer__header {
+    letter-spacing: 1px;
+  }
+  .footer__address-desc,
+  .footer__reg-desc,
+  .footer__share-buttons {
+    line-height: 20px;
+    letter-spacing: 1px;
+    span {
+      letter-spacing: 1px;
+      font-size: 16px;
+      text-transform: none;
+    }
+  }
 }

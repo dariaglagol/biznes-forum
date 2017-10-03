@@ -149,3 +149,29 @@
     top: 75%;
   }
 }
+
+@media(min-width: $tablet) and (max-width:$desktop) {
+  .person-popup {
+    top: 7%;
+    width: 600px;
+    margin-left: -300px;
+    video {
+      width: 550px;
+    }
+  }
+  .person-popup__close::after {
+    right: -560px;
+  }
+  .person-popup__name {
+    width: auto;
+    font-size: 21px;
+  }
+  #suhanov-speaker,
+   #magirovskij{
+    top: 7%;
+  }
+  #tarabykina,
+  #korobkina{
+    top: 47%;
+  }
+}

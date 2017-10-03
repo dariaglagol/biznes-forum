@@ -127,3 +127,17 @@
     letter-spacing: 1px;
   }
 }
+
+@media(min-width: $tablet) and (max-width: $desktop) {
+  .impression__header {
+    letter-spacing: 1px;
+  }
+  .impression__header-desc {
+    font-size: 18px;
+  }
+  .impression__btn-take-part button {
+    padding: 14px 34px;
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+}

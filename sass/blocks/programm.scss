@@ -49,6 +49,7 @@
 }
 
 .programm__item-desc {
+  height: 40px;
   font-family: $futura-plain;
   font-size: 20px;
   line-height: 20px;
@@ -96,6 +97,9 @@
   .programm__item-left {
     margin-bottom: 35px;
   }
+  .programm__item-desc {
+    height: auto;
+  }
  }
 
 @media(min-width: $tablet) and (max-width: $desktop) {
@@ -108,5 +112,10 @@
   }
   .programm__items-inner {
     padding: 25px 0;
+  }
+  .programm__items-inner:after {
+    top: 30px;
+    width: 2px;
+    height: 72%;
   }
 }
