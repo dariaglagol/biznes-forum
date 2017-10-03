@@ -22,7 +22,7 @@ html {
   height: 1px;
   overflow: hidden;
 }
-
+// Стили формы
 body.open{
 	overflow-y:scroll;
 }
@@ -43,7 +43,7 @@ body.open:after{
 }
 body .reg{
 	position:fixed;
-}  
+}
 body .reg-wrap{
 	display:none;
 }
@@ -81,6 +81,8 @@ body.open .reg-wrap{
     opacity: 1;
   }
 }
+
+// Стили скроллбара
 
 ::-webkit-scrollbar-button {
 background-image:url('');

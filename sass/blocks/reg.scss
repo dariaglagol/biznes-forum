@@ -131,7 +131,7 @@
 }
 
 .reg_label--sex[for="sex-female"] {
- margin-right: 24px; 
+ margin-right: 24px;
 }
 
 .reg_org-block {
@@ -183,7 +183,7 @@
   font-size: 15px;
   line-height: 18px;
   color: #ffffff;
-  
+
   a {
     color: #ffffff;
   }
@@ -208,4 +208,14 @@
   height: 15px;
   background: url(../img/icon-checkbox.png) no-repeat center;
   background-size: contain;
+}
+
+@media(max-width: $tablet) {
+  .reg {
+    width: 320px;
+    top: 0px;
+    left: 0px;
+    margin-left: 0px;
+    z-index: 10001;
+  }
 }
