@@ -121,6 +121,9 @@
       width: 280px;
     }
   }
+  .person-popup-link {
+    position: relative;
+  }
   .person-popup__close::after {
     right: -279px;
   }
@@ -158,6 +161,9 @@
     video {
       width: 550px;
     }
+  }
+  .person-popup-link {
+    position: relative;
   }
   .person-popup__close::after {
     right: -560px;
