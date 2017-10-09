@@ -6,9 +6,10 @@
   <title>V региональный форум молодых предпринимателей</title>
   <meta name="description" content="V региональный форум молодых предпринимателей">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.css?v.4.4">
+  <link rel="stylesheet" href="css/style.css?v.5.2">
   <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/owl.theme.default.css">
+  <link rel="stylesheet" href="css/menu.css">
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-165739-hWERZ';</script>
 </head>
@@ -17,15 +18,16 @@
     <nav class="main-nav">
       <div class="main-nav__fixing">
         <div class="main-nav__wrap container">
-          <div class="main-nav__inner">
+          <nav class="main-nav__inner">
             <div class="main-nav__logo hidden" id="logo"><img alt="Бизнес-форум Томск 2017" class="main-nav__pict" src="img/logo-top.png" width="189" height="73"></div>
-            <div class="main-nav__item-list">
-             <a class="main-nav__item" href="#programm">Программа</a>
-             <a class="main-nav__item" href="#speakers">Спикеры</a>
-             <a class="main-nav__item" href="#previously">Как это было</a>
-              <a class="main-nav__item" href="#impression">Участники</a>
-            </div>
-          </div>
+            <button class="main-nav__toggle"></button>
+            <ul class="main-nav__item-list">
+             <li class="main-nav__item"><a  href="#programm">Программа</a></li>
+             <li class="main-nav__item" ><a href="#speakers">Спикеры</a></li>
+             <li class="main-nav__item"><a href="#previously">Как это было</a></li>
+              <li class="main-nav__item" ><a href="#impression">Участники</a></li>
+            </ul>
+          </nav>
           <div class="header__take-part">
             <span class="header__phone">979-335</span>       <button class="header__call" type="button" onclick="yaCounter46095249.reachGoal('OpenForm');">Принять участие</button>
           </div>
@@ -36,7 +38,7 @@
       <p class="banner__date">27 Октября <span class="banner__date banner__date--blur">2017</span></p>
       <h1 class="banner__event">V региональный форум<br> молодых предпринимателей</h1>
       <div class="banner__logo">
-        <img alt="Бизнес-форум Томск 2017" src="img/logo-big.png" width="515" height="198">         
+        <img alt="Бизнес-форум Томск 2017" src="img/logo-big.png" width="515" height="198">
       </div>
       <button class="banner__button-take-part" type="button" onclick="yaCounter46095249.reachGoal('OpenForm');">Принять участие</button>
       <div class="timer">
@@ -48,12 +50,15 @@
         </div>
       </div>
     </div>
-  </header>  
+  </header>
   <main class="content-block">
     <section class="org">
       <h2 class="org__header">Организаторы</h2>
       <div class="org__list-wrap container">
-        <img src="img/logo-fond.png" alt="Фонд развития предпринимательства" class="org_item" width="110" height="131">
+       <a href="https://tomsk.gov.ru/" target="_blank"><img src="img/logo-dep.png" alt="" class="org__item" height="131"></a>
+       <a href="http://fondtomsk.ru/" target="_blank"><img src="img/logo-fond.png" alt="Фонд развития предпринимательства" class="org__item" width="110" height="131"></a>
+       <a href="https://lidertomsk.ru/" target="_blank"><img src="img/logo-tmu.png" alt="Томск - месторождение успеха" class="org__item" height="131"></a>
+       <a href="https://vk.com/headline_project" target="_blank"><img src="img/logo-head-line.png" alt="Head Line" height="131" class="org__item"></a>
       </div>
     </section>
     <section class="programm" id="programm">
@@ -145,7 +150,7 @@
         <span class="person-popup__close"></span>
         <div class="person-popup__wrap">
           <div class="person-popup_info-block person-popup_info-block--video">
-            <p class="person-popup__name">Денис Газукин г. Барнаул</p>
+            <p class="person-popup__name">Денис Газукин<br> г. Барнаул</p>
             <p class="person-popup__profession">Серийный предприниматель, инвестор, основатель и руководитель IT-компаний Митра и Freematiq.</p>
             <video src="video/vid-gazukin.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' width="740" controls>Элемент video не поддерживается вашим браузером. </video>
             <ul class="person-popup__achives">
@@ -238,7 +243,7 @@
             <p class="person-popup__speach-about">О чем поговорим: &laquo;Основа любого бизнеса - это личность его руководителя. Всё что происходит с ней, происходит и с организацией, отражается на её процессах и людях. Осознанный предприниматель - основа здоровой успешной организации&raquo;.</p>
           </div>
         </div>
-      </div>    
+      </div>
     </section>
     <section class="previously previously--balls" id="previously">
      <h2 class="previously_header">Как это было</h2>
@@ -286,7 +291,7 @@
                 <span class="impression__item-profession">Бизнес-тренер Moscow Business School, спикер Форума 2016</span>
              </p>
             </a>
-          </article>  
+          </article>
           <article class="impression__item item">
             <a href="#goncharov" class="person-popup-link">
              <img src="img/img-goncharov.jpg" alt="" class="impression__item-photo" width="261" height="261"/>
@@ -376,7 +381,16 @@
                 <span class="impression__item-profession">Руководитель студии красоты «Annette Studio»</span>
               </p>
             </a>
-          </article>           
+          </article>
+          <article class="impression__item item">
+            <a href="#akopyan" class="person-popup-link">
+             <img src="img/img-akopyan.jpg" alt="" class="impression__item-photo" width="261" height="261"/>
+              <p class="impression__item-desc">
+                <span class="impression__item-name"><span>Акопян</span> Азат</span>
+                <span class="impression__item-profession">Директор завода строительных материалов ООО «СтройМикс»</span>
+              </p>
+            </a>
+          </article>
         </div>
         <div class="impression__btn-take-part">
           <button type="button" onclick="yaCounter46095249.reachGoal('OpenForm');">Принять участие</button>
@@ -592,6 +606,21 @@
           </div>
         </div>
       </div>
+      <div id="akopyan" class="person-popup person-popup--hidden">
+        <span class="person-popup__close"></span>
+        <div class="person-popup__wrap">
+          <div class="person-popup__photo-block">
+            <img src="img/img-akopyan.jpg" alt="" class="person-popup__photo person-popup__photo--round" width="261">
+          </div>
+          <div class="person-popup_info-block person-popup_info-block--padding">
+            <p class="person-popup__name">Азат Акопян</p>
+            <p class="person-popup__profession">Директор завода строительных материалов ООО «СтройМикс»</p>
+            <ul class="person-popup__achives">
+              <li>«Форум оставил очень хорошее впечатление благодаря грамотной организации, позитивной атмосфере и ряду действительно крутых спикеров. Было много молодых представителей разных областей бизнеса, и я обрёл на форуме двух новых партнёров, мотивацию минимум на три недели вперед, и безусловно, уйму новых знаний. За это выражаю благодарность чудесным организаторам и желаю успехов!»</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="partners">
       <div class="container">
@@ -616,7 +645,7 @@
           </section>
           <section class="footer__address-block">
             <p class="footer__address-desc"><span>Площадка:</span> особая экономическая зона «ТВЗ». Пр. Развития, 3</p>
-            <p class="footer__reg-desc"><span>По вопросам регистрации:</span><br>headlinerf@gmail.com</p>
+            <p class="footer__reg-desc"><span>По вопросам регистрации:</span><br><a href="mailto:headlinerf@gmail.com">headlinerf@gmail.com</a></p>
             <p class="footer__share-buttons"><span>Рассказать друзьям:</span><br></p>
             <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
             <script src="//yastatic.net/share2/share.js"></script>
@@ -673,7 +702,7 @@
 		<input class="reg_input" type="text" name="org-individual-tax-num" disablerd id="org-individual-tax-num">
        </fieldset>
        <input type="checkbox" name="agreement" required="" checked="" class="reg_agreement" id="agreement-checkbox">
-       <label for="agreement-checkbox" class="reg_agreement-label">Я подтверждаю свою дееспособность, гарантирую достоверность предоставленной информации, даю согласие на обработку своих персональных данных в соответствии с <a href="#" target="_blank">Условиями</a></label>
+       <label for="agreement-checkbox" class="reg_agreement-label">Я подтверждаю свою дееспособность, гарантирую достоверность предоставленной информации, даю согласие на обработку своих персональных данных в соответствии с <a href="soglashenie.pdf" target="_blank">Условиями</a></label>
        <button class="reg_submit" type="submit">Отправить</button>
      </fieldset>
 	 </form>
@@ -703,7 +732,7 @@
     </form>
   </div>
   <div class="overlay overlay--hidden"></div>
-  <script type="text/javascript">(function() {
+<script type="text/javascript">(function() {
   if (window.pluso)if (typeof window.pluso.start == "function") return;
   if (window.ifpluso==undefined) { window.ifpluso = 1;
     var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
@@ -712,8 +741,10 @@
     var h=d[g]('body')[0];
     h.appendChild(s);
   }})();</script>
-<div class="pluso" data-background="#ebebeb" data-options="big,square,line,vertical,counter,theme=06" data-services="vkontakte,facebook"></div>
+<div class="pluso" data-background="#ebebeb" data-options="medium,square,line,vertical,counter,theme=05" data-services="vkontakte,facebook"></div>
 <script src="scripts.js"></script>
+<script src="js/add-carousel.js"></script>
+<script src="js/menu-mobile.js"></script>
  <script src="js/popup.js"></script>
   <script src="js/counter.js"></script>
   <script src="js/show-logo.js"></script>
@@ -724,7 +755,7 @@
         margin: 10,
         nav: true,
         responsive: {
-            200: {
+            0: {
                 items: 1
             },
             600: {
@@ -733,8 +764,7 @@
             1000: {
                 items: 3
             }
-        }
-    });
+    }})
 </script>
 <script>
   $(document).ready(function(){
@@ -746,7 +776,7 @@
         e.preventDefault();
         return false;
     });
-	
+
 	$('input[type="radio"][name="type"]').change(function(){
 		if($(this).val() == 'fiz'){
 			$('.reg_org-block').slideUp(200);
@@ -758,34 +788,34 @@
 	});
 });
 </script>
-<!— Yandex.Metrika counter —> 
-<script type="text/javascript" > 
-(function (d, w, c) { 
-(w[c] = w[c] || []).push(function() { 
-try { 
-w.yaCounter46095249 = new Ya.Metrika({ 
-id:46095249, 
-clickmap:true, 
-trackLinks:true, 
-accurateTrackBounce:true, 
-webvisor:true 
-}); 
-} catch(e) { } 
-}); 
+<!— Yandex.Metrika counter —>
+<script type="text/javascript" >
+(function (d, w, c) {
+(w[c] = w[c] || []).push(function() {
+try {
+w.yaCounter46095249 = new Ya.Metrika({
+id:46095249,
+clickmap:true,
+trackLinks:true,
+accurateTrackBounce:true,
+webvisor:true
+});
+} catch(e) { }
+});
 
-var n = d.getElementsByTagName("script")[0], 
-s = d.createElement("script"), 
-f = function () { n.parentNode.insertBefore(s, n); }; 
-s.type = "text/javascript"; 
-s.async = true; 
-s.src = "https://mc.yandex.ru/metrika/watch.js"; 
+var n = d.getElementsByTagName("script")[0],
+s = d.createElement("script"),
+f = function () { n.parentNode.insertBefore(s, n); };
+s.type = "text/javascript";
+s.async = true;
+s.src = "https://mc.yandex.ru/metrika/watch.js";
 
-if (w.opera == "[object Opera]") { 
-d.addEventListener("DOMContentLoaded", f, false); 
-} else { f(); } 
-})(document, window, "yandex_metrika_callbacks"); 
-</script> 
-<noscript><div><img src="https://mc.yandex.ru/watch/46095249" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
+if (w.opera == "[object Opera]") {
+d.addEventListener("DOMContentLoaded", f, false);
+} else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/46095249" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!— /Yandex.Metrika counter —>
 </body>
 </html>

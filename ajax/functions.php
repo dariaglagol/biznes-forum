@@ -65,7 +65,7 @@ function sendFirstStep($mail){
 }
 
 function sendNotify(){
-	$mails = array('molpredtomsk@gmail.com','klava@maybah.com');
+	$mails = array('molpredtomsk@gmail.com');
 	$subject = 'Новая заявка на сайте форумтомск70';
 	foreach($mails as $mail){
 		mail_new($mail,$subject,$subject);
