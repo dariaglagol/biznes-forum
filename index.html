@@ -6,7 +6,7 @@
   <title>V региональный форум молодых предпринимателей</title>
   <meta name="description" content="V региональный форум молодых предпринимателей">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.css?v.4.8">
+  <link rel="stylesheet" href="css/style.css?v.5.2">
   <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/owl.theme.default.css">
   <link rel="stylesheet" href="css/menu.css">
@@ -55,7 +55,10 @@
     <section class="org">
       <h2 class="org__header">Организаторы</h2>
       <div class="org__list-wrap container">
-        <img src="img/logo-fond.png" alt="Фонд развития предпринимательства" class="org_item" width="110" height="131">
+       <a href="https://tomsk.gov.ru/" target="_blank"><img src="img/logo-dep.png" alt="" class="org__item" height="131"></a>
+       <a href="http://fondtomsk.ru/" target="_blank"><img src="img/logo-fond.png" alt="Фонд развития предпринимательства" class="org__item" width="110" height="131"></a>
+       <a href="https://lidertomsk.ru/" target="_blank"><img src="img/logo-tmu.png" alt="Томск - месторождение успеха" class="org__item" height="131"></a>
+       <a href="https://vk.com/headline_project" target="_blank"><img src="img/logo-head-line.png" alt="Head Line" height="131" class="org__item"></a>
       </div>
     </section>
     <section class="programm" id="programm">
@@ -675,14 +678,14 @@
        <label for="e-mail" class="reg_label">Ваша почта:</label>
        <input class="reg_input" type="email" name="user-email" id="e-mail" placeholder="yourMail@example.com" required>
 	   <div class="reg_label">
-		<label><input type="radio" value="fiz" name="type" checked> Физическое лицо</label>
+		<label><input type="radio" value="ur" name="type" checked> Юридическое лицо </label>
 	   </div>
 	   <div class="reg_label">
-		<label><input type="radio" value="ur" name="type"> Юридическое лицо </label>
+		<label><input type="radio" value="fiz" name="type"> Физическое лицо</label>
 	   </div>
-       <fieldset class="reg_org-block" style="display:none;">
+       <fieldset class="reg_org-block">
          <label for="org_name" class="reg_label reg_label--select">Название и организацонная форма компании:</label>
-         <select class="reg_select" name="org_form" id="org_form" disabled>
+         <select class="reg_select" name="org_form" id="org_form" required>
            <option value="ООО" selected>ООО</option>
            <option value="ИП">ИП</option>
            <option value="ОАО">ОАО</option>
@@ -694,12 +697,25 @@
            <option value="ОДО">ОДО</option>
            <option value="КФХ">КФХ</option>
          </select>
-         <input class="reg_input reg_input--org" type="text" name="org_name" disabled id="org_name" placeholder="Квадрат">
+         <input class="reg_input reg_input--org" type="text" name="org_name" required id="org_name" placeholder="Квадрат">
 		<label for="org_individual-tax-num" class="reg_label">ИНН:</label>
-		<input class="reg_input" type="text" name="org-individual-tax-num" disablerd id="org-individual-tax-num">
+		<input class="reg_input" type="text" name="org-individual-tax-num" id="org-individual-tax-num">
        </fieldset>
+	   
+	   
+       <fieldset class="reg_org-block-fiz" style="display:none;">
+		   <div class="reg_label">
+			<label><input type="radio" value="worker" name="fiz_type"> Работающий </label>
+		   </div>
+		   <div class="reg_label">
+			<label><input type="radio" value="student" name="fiz_type"> Студент</label>
+		   </div>
+			<input class="reg_input reg_input--org" type="text" name="fiz_company" id="fiz_company" placeholder="Наименование организации" style="display:none;" disabled>
+			<input class="reg_input reg_input--org" type="text" name="fiz_role" id="fiz_role" placeholder="Должность" style="display:none;" disabled>
+       </fieldset>
+	   
        <input type="checkbox" name="agreement" required="" checked="" class="reg_agreement" id="agreement-checkbox">
-       <label for="agreement-checkbox" class="reg_agreement-label">Я подтверждаю свою дееспособность, гарантирую достоверность предоставленной информации, даю согласие на обработку своих персональных данных в соответствии с <a href="#" target="_blank">Условиями</a></label>
+       <label for="agreement-checkbox" class="reg_agreement-label">Я подтверждаю свою дееспособность, гарантирую достоверность предоставленной информации, даю согласие на обработку своих персональных данных в соответствии с <a href="soglashenie.pdf" target="_blank">Условиями</a></label>
        <button class="reg_submit" type="submit">Отправить</button>
      </fieldset>
 	 </form>
@@ -777,14 +793,42 @@
 	$('input[type="radio"][name="type"]').change(function(){
 		if($(this).val() == 'fiz'){
 			$('.reg_org-block').slideUp(200);
+			$('.reg_org-block-fiz').slideDown(200);
 			$('.reg_org-block').find('select,input').prop('disabled',true).prop('required',false)
+			$('.reg_org-block-fiz').find('input[type="checkbox"]').prop('disabled',false).prop('required',true)
 		}else{
 			$('.reg_org-block').slideDown(200);
+			$('.reg_org-block-fiz').slideUp(200);
 			$('.reg_org-block').find('select,input').prop('disabled',false).prop('required',true)
+			$('.reg_org-block-fiz').find('input[type="checkbox"]').prop('disabled',true).prop('required',false)
+		}
+	});
+	
+	
+	$('input[type="radio"][name="fiz_type"]').change(function(){
+		if($(this).val() == 'worker'){
+			$('.reg_org-block-fiz input[type="text"]').show();
+			$('.reg_org-block-fiz').find('input[type="text"]').prop('disabled',false).prop('required',true);
+		}else{
+			$('.reg_org-block-fiz input[type="text"]').hide();
+			$('.reg_org-block-fiz').find('input[type="text"]').prop('disabled',true).prop('required',false);
 		}
 	});
 });
 </script>
+<style>
+.reg_org-block-fiz{
+	border:0;
+	padding:0;
+	margin:0;
+	margin-top:10px;
+	border-top:1px solid white;
+	padding-top:20px;
+}
+.reg_org-block-fiz input[type=text]{
+	width:100%;
+}
+</style>
 <!— Yandex.Metrika counter —>
 <script type="text/javascript" >
 (function (d, w, c) {
