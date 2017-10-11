@@ -48,6 +48,11 @@
   letter-spacing: 1px;
 }
 
+.main-nav__item a {
+    color: #949494;
+    text-decoration: none;
+}
+
 @media(max-width: $tablet) {
   .main-nav__fixing {
     position: static;
