@@ -6,7 +6,7 @@
   <title>V региональный форум молодых предпринимателей</title>
   <meta name="description" content="V региональный форум молодых предпринимателей">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.css?v.6">
+  <link rel="stylesheet" href="css/style.css?v.7">
   <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/owl.theme.default.css">
   <link rel="stylesheet" href="css/menu.css">
@@ -56,7 +56,7 @@
       <h2 class="org__header">Организаторы</h2>
       <div class="org__list-wrap container">
        <a href="https://tomsk.gov.ru/" target="_blank"><img src="img/logo-dep.png" alt="" class="org__item" height="131"></a>
-       <a href="http://fondtomsk.ru/" target="_blank"><img src="img/logo-fond.png" alt="Фонд развития предпринимательства" class="org__item" width="110" height="131"></a>
+       <a href="http://fondtomsk.ru/" target="_blank"><img src="img/logo-fond.png" alt="Фонд развития предпринимательства" class="org__item" height="131"></a>
        <a href="https://lidertomsk.ru/" target="_blank"><img src="img/logo-tmu.png" alt="Томск - месторождение успеха" class="org__item" height="131"></a>
        <a href="https://vk.com/headline_project" target="_blank"><img src="img/logo-head-line.png" alt="Head Line" height="131" class="org__item"></a>
       </div>
@@ -716,6 +716,8 @@
 		<label for="org_individual-tax-num" class="reg_label">ИНН:</label>
 		<input class="reg_input" type="text" name="org-individual-tax-num" id="org-individual-tax-num">
        </fieldset>
+
+
        <fieldset class="reg_org-block-fiz" style="display:none;">
 		   <div class="reg_label">
 			<label><input type="radio" value="worker" name="fiz_type"> Работающий </label>
@@ -726,6 +728,7 @@
 			<input class="reg_input reg_input--org" type="text" name="fiz_company" id="fiz_company" placeholder="Наименование организации" style="display:none;" disabled>
 			<input class="reg_input reg_input--org" type="text" name="fiz_role" id="fiz_role" placeholder="Должность" style="display:none;" disabled>
        </fieldset>
+
        <input type="checkbox" name="agreement" required="" checked="" class="reg_agreement" id="agreement-checkbox">
        <label for="agreement-checkbox" class="reg_agreement-label">Я подтверждаю свою дееспособность, гарантирую достоверность предоставленной информации, даю согласие на обработку своих персональных данных в соответствии с <a href="soglashenie.pdf" target="_blank">Условиями</a></label>
        <button class="reg_submit" type="submit">Отправить</button>
@@ -815,6 +818,8 @@
 			$('.reg_org-block-fiz').find('input[type="checkbox"]').prop('disabled',true).prop('required',false)
 		}
 	});
+
+
 	$('input[type="radio"][name="fiz_type"]').change(function(){
 		if($(this).val() == 'worker'){
 			$('.reg_org-block-fiz input[type="text"]').show();

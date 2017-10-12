@@ -21,3 +21,9 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
+@media(max-width: $tablet) {
+  .org__list-wrap {
+    justify-content: center;
+  }
+}

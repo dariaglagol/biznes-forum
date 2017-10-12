@@ -761,7 +761,16 @@ body.open .reg-wrap {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between; 
+  flex-wrap: wrap;
+}
+
+@media(max-width: 660px) {
+  .org__list-wrap {
+    -ms-flex-pack: ceneter;
+      justify-content: center;
+  }
+}
 
 .features {
   padding-top: 48px;
