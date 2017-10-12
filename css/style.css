@@ -264,6 +264,10 @@ body.open .reg-wrap {
     color: #949494;
     text-decoration: none; }
 
+.main-nav__item a {
+  color: #949494;
+  text-decoration: none; }
+
 @media (max-width: 768px) {
   .main-nav__fixing {
     position: static;
@@ -760,17 +764,15 @@ body.open .reg-wrap {
 .org__list-wrap {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between; 
-  flex-wrap: wrap;
-}
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
 
-@media(max-width: 660px) {
+@media (max-width: 660px) {
   .org__list-wrap {
-    -ms-flex-pack: ceneter;
-      justify-content: center;
-  }
-}
+    -ms-flex-pack: center;
+        justify-content: center; } }
 
 .features {
   padding-top: 48px;
