@@ -33,7 +33,7 @@
 
 .header__call {
   margin: 0px;
-  padding: 14px 24px 0px 18px;
+  padding: 14px 20px 0px 18px;
   border: none;
   border-bottom: 5px solid #b71642;
   font-family: $font-plain;
@@ -52,18 +52,7 @@
   .header {
     background-size: cover;
   }
-//  .header__take-part {
-//    max-width: 280px;
-//  }
-//  .header__phone {
-//    padding: 0;
-//    margin: 0 10px;
-//    font-size: 16px;
-//  }
-//  .header__call {
-//    padding: 14px 10px 0px 10px;
-//    font-size: 16px;
-//  }
+
   .header__take-part {
     padding-top: 0px;
     text-align: left;
@@ -77,5 +66,26 @@
   .header__call {
     padding: 5px 10px 0px 10px;
     font-size: 16px;
+  }
+}
+
+@media(min-width: $tablet) and (max-width: 768px) {
+  .header__take-part {
+    text-align: left;
+  }
+  .header__phone {
+    height: auto;
+    margin-left: 20px;
+  }
+}
+
+@media(min-width:769px) and (max-width: $desktop) {
+  .header__take-part {
+    max-width: 175px;
+  }
+  .header__call {
+    font-size: 16px;
+    padding: 14px 5px 0px 5px;
+    letter-spacing: 1px;
   }
 }

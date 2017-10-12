@@ -20,8 +20,8 @@
   bottom: -28px;
   left: 50%;
   margin-left: -60px;
-  background-color: $plain-pink; 
-} 
+  background-color: $plain-pink;
+}
 
 .impression__header-desc {
   margin-top: 44px;
@@ -105,4 +105,39 @@
   background-color: $hover-pink;
   box-shadow: 0px 0px 19px 7px rgba(0, 0, 0, 0.6) inset;
   outline-color: $hover-pink;
+}
+
+@media(max-width: $tablet) {
+  .impression__header {
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: 0px;
+    margin: 0px;
+  }
+  .impression__header-desc {
+    font-size: 17px;
+    letter-spacing: 0px;
+  }
+  .impression__item {
+    width: 280px;
+  }
+  .impression__btn-take-part button {
+    padding: 14px 33px;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+}
+
+@media(min-width: $tablet) and (max-width: $desktop) {
+  .impression__header {
+    letter-spacing: 1px;
+  }
+  .impression__header-desc {
+    font-size: 18px;
+  }
+  .impression__btn-take-part button {
+    padding: 14px 34px;
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
 }

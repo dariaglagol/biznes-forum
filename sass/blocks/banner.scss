@@ -86,3 +86,41 @@
     order: 4;
   }
 }
+
+@media(min-width: $tablet) and (max-width: $desktop) {
+  .banner {
+    margin-top: 40px;
+    justify-content: flex-start;
+  }
+  .banner__event {
+    margin-top: 30px;
+    font-size: 32px;
+    letter-spacing: 3px;
+  }
+  .banner__button-take-part {
+    top: 375px;
+    left: 50%;
+    margin-left: -134px;
+  }
+  .banner__date {
+    margin-top: 0px;
+    font-size: 35px;
+  }
+  .banner__logo img {
+    width: 350px;
+    height: 133px;
+  }
+  .banner__date,
+  .banner__logo,
+  .banner__event,
+  .banner__button-take-part {
+    text-align: left;
+    order: 0;
+  }
+}
+
+@media(min-width:769px) and (max-width: $desktop) {
+  .banner {
+    margin-top: 80px;
+  }
+}

@@ -5,7 +5,7 @@
   background: url("../img/bg-speakers-ball.png") no-repeat top left,
     url(../img/bg-speakers-ball-bottom.png) no-repeat bottom right;
   background-color: #aeaeb8;
-  
+  background-size: auto;
 }
 
 .speakers__header {
@@ -101,6 +101,47 @@
   }
   .speakers__wrap-inner {
     width: 280px;
+  }
+  .speakers__item {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .speakers {
+    background-size: contain;
+  }
+  .speakers__item {
+    margin-bottom: 145px;
+  }
+  .speakers__item--achive,
+  .speakers__item--exp,
+  .speakers__item--position {
+    font-size: 13px;
+  }
+  .speakers__item-desc {
+    top: 10px;
+    text-align: left;
+  }
+}
+
+@media(min-width: $tablet) and (max-width: $desktop) {
+  .speakers__header {
+    letter-spacing: 1px;
+  }
+  .speakers__wrap-inner {
+    width: 620px;
+    padding-bottom: 20px;
+    justify-content: space-around;
+  }
+  .speakers__item-desc {
+    top: 10px;
+    text-align: left;
+  }
+  .speakers__item--achive,
+  .speakers__item--exp,
+  .speakers__item--position {
+    font-size: 14px;
   }
   .speakers__item {
     margin-right: 0px;

@@ -80,7 +80,7 @@
 @media(max-width: $tablet) {
   .features__desc {
     width: 280px;
-    font-size: 27px;
+    font-size: 22px;
     line-height: 34px;
     letter-spacing: 0px;
   }
@@ -102,5 +102,30 @@
   .features__btn-take-part button {
     width: 280px;
     font-size: 18px;
+  }
+  .features__item {
+    margin-bottom: 50px;
+  }
+}
+
+@media(min-width:$tablet) and (max-width: $desktop) {
+  .features__desc {
+    width: 620px;
+    font-size: 29px;
+    line-height: 34px;
+    letter-spacing: 1px;
+  }
+  .features__wrap {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .features__btn-get-programm {
+    padding-right: 40px;
+  }
+  .features__btn-get-programm a,
+  .features__btn-take-part button {
+    width: 280px;
+    font-size: 18px;
+    letter-spacing: 1px;
   }
 }

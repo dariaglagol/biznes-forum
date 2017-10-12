@@ -42,36 +42,123 @@
   font-family: "Franklin Gothic Medium", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  color: #949494;
   text-transform: uppercase;
-  text-decoration: none;
   letter-spacing: 1px;
+  a {
+    color: #949494;
+    text-decoration: none;
+  }
 }
 
+<<<<<<< HEAD
 .main-nav__item a {
     color: #949494;
     text-decoration: none;
 }
 
 @media(max-width: $tablet) {
+=======
+@media(max-width: 768px) {
+>>>>>>> 55f4acf3b8ffcdb617aa32ca359efb96647ae803
   .main-nav__fixing {
     position: static;
     margin-left: 0px;
     padding-top: 20px;
     padding-bottom: 10px;
+    overflow-x: hidden;
   }
   .main-nav {
     padding-top: 0px;
   }
+  .main-nav__wrap {
+    flex-direction: column;
+  }
   .main-nav__inner {
+    position: relative;
     order: 2;
   }
   .main-nav__item-list {
+    width: 100%;
     display: none;
     flex-wrap: wrap;
     padding-top: 20px;
   }
   .main-nav__logo {
     display: none;
+  }
+  .main-nav__item {
+    position: relative;
+    padding: 17px 0px;
+    padding-top: 32px;
+    text-align: center;
+  }
+  .main-nav__item:first-child::before {
+    content: "";
+    position: absolute;
+    left: -200px;
+    top: 10px;
+    width: 1000px;
+    height: 1px;
+    background-color: rgb(129, 127, 136);
+  }
+  .main-nav__item::after {
+    content: "";
+    position: absolute;
+    left: -200px;
+    bottom: -10px;
+    width: 1000px;
+    height: 1px;
+    background-color: rgb(129, 127, 136);
+  }
+}
+
+@media(min-width: $tablet) and (max-width: 768px) {
+  .main-nav__item-list {
+    width: 100%;
+  }
+  .main-nav__item {
+    position: relative;
+    padding: 17px 0px;
+    padding-top: 32px;
+    text-align: center;
+  }
+  .main-nav__item:first-child::before {
+    content: "";
+    position: absolute;
+    left: -200px;
+    top: 10px;
+    width: 1000px;
+    height: 1px;
+    background-color: rgb(129, 127, 136);
+  }
+  .main-nav__item::after {
+    content: "";
+    position: absolute;
+    left: -200px;
+    bottom: -10px;
+    width: 1000px;
+    height: 1px;
+    background-color: rgb(129, 127, 136);
+  }
+}
+
+@media(min-width: 769px) and (max-width: $desktop) {
+  .main-nav__pict {
+    width: 96px;
+    height: 41px;
+  }
+  .main-nav__item-list {
+    padding-left: 15px;
+  }
+  .main-nav__item {
+    padding-top: 30px;
+    padding-right: 12px;
+    font-size: 13px;
+  }
+  .main-nav__logo {
+    padding-left: 0px;
+  }
+  .main-nav__fixing {
+    padding-bottom: 6px;
   }
 }
