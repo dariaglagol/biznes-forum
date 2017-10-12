@@ -6,11 +6,7 @@
   <title>V региональный форум молодых предпринимателей</title>
   <meta name="description" content="V региональный форум молодых предпринимателей">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<<<<<<< HEAD
-  <link rel="stylesheet" href="css/style.css?v.5.2">
-=======
-  <link rel="stylesheet" href="css/style.css?v.4.8">
->>>>>>> 55f4acf3b8ffcdb617aa32ca359efb96647ae803
+  <link rel="stylesheet" href="css/style.css?v.6">
   <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/owl.theme.default.css">
   <link rel="stylesheet" href="css/menu.css">
@@ -148,6 +144,13 @@
                 <span class="speakers__item--position">Соучредитель психолого-консалтингового партнерства "О-сознание" </span>
               </p></a>
           </article>
+          <article class="speakers__item">
+            <a href="#zukova" class="person-popup-link">  <img src="img/img-zukova.jpg" alt="Ольга Жукова" class="speakers__photo" width="193"/>
+              <p class="speakers__item-desc">
+                <span class="speakers__item--name"><span>Жукова</span><br>Ольга</span>
+                <span class="speakers__item--position">Основатель и директор сети ФК "Фристайл" </span>
+              </p></a>
+          </article>
         </div>
       </div>
       <div id="gazuhin" class="person-popup person-popup--hidden">
@@ -165,6 +168,16 @@
               <li>Провёл более 150 семинаров, мастер-классов в разных городах России.</li>
             </ul>
             <p class="person-popup__speach-about">О чем поговорим: &laquo;Отвечу на любой ваш вопрос о стартапе, о ведении бизнеса, о раскрытии деловых способностей в управлении предприятием&raquo;</p>
+          </div>
+        </div>
+      </div>
+       <div id="zukova" class="person-popup person-popup--hidden">
+        <span class="person-popup__close"></span>
+        <div class="person-popup__wrap">
+          <div class="person-popup_info-block person-popup_info-block--video">
+            <p class="person-popup__name">Ольга Жукова<br> г. Томск</p>
+            <p class="person-popup__profession">Основатель и директор сети ФК "Фристайл"</p>
+            <video src="video/zukova.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' width="740" controls>Элемент video не поддерживается вашим браузером. </video>
           </div>
         </div>
       </div>
@@ -210,12 +223,10 @@
       <div id="suhanov-speaker" class="person-popup person-popup--hidden">
        <span class="person-popup__close"></span>
        <div class="person-popup__wrap">
-         <div class="person-popup__photo-block">
-          <img src="img/img-suhanov.jpg" alt="" class="person-popup__photo" width="194">
-        </div>
-        <div class="person-popup_info-block">
+        <div class="person-popup_info-block person-popup_info-block--video">
           <p class="person-popup__name">Дмитрий Суханов<br>г. Москва</p>
           <p class="person-popup__profession">Эксперт в области предпринимательства, ментор и спикер-мотиватор. </p>
+          <video src="video/suhanov.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' width="740" controls>Элемент video не поддерживается вашим браузером. </video>
           <ul class="person-popup__achives">
             <li>Обучил более 3 000 молодых людей предпринимательству.</li>
             <li>Участниками было открыто более 400 ООО/ИП.</li>
@@ -705,8 +716,6 @@
 		<label for="org_individual-tax-num" class="reg_label">ИНН:</label>
 		<input class="reg_input" type="text" name="org-individual-tax-num" id="org-individual-tax-num">
        </fieldset>
-	   
-	   
        <fieldset class="reg_org-block-fiz" style="display:none;">
 		   <div class="reg_label">
 			<label><input type="radio" value="worker" name="fiz_type"> Работающий </label>
@@ -717,7 +726,6 @@
 			<input class="reg_input reg_input--org" type="text" name="fiz_company" id="fiz_company" placeholder="Наименование организации" style="display:none;" disabled>
 			<input class="reg_input reg_input--org" type="text" name="fiz_role" id="fiz_role" placeholder="Должность" style="display:none;" disabled>
        </fieldset>
-	   
        <input type="checkbox" name="agreement" required="" checked="" class="reg_agreement" id="agreement-checkbox">
        <label for="agreement-checkbox" class="reg_agreement-label">Я подтверждаю свою дееспособность, гарантирую достоверность предоставленной информации, даю согласие на обработку своих персональных данных в соответствии с <a href="soglashenie.pdf" target="_blank">Условиями</a></label>
        <button class="reg_submit" type="submit">Отправить</button>
@@ -807,8 +815,6 @@
 			$('.reg_org-block-fiz').find('input[type="checkbox"]').prop('disabled',true).prop('required',false)
 		}
 	});
-	
-	
 	$('input[type="radio"][name="fiz_type"]').change(function(){
 		if($(this).val() == 'worker'){
 			$('.reg_org-block-fiz input[type="text"]').show();
@@ -820,7 +826,6 @@
 	});
 });
 </script>
-<<<<<<< HEAD
 <style>
 .reg_org-block-fiz{
 	border:0;
@@ -834,8 +839,6 @@
 	width:100%;
 }
 </style>
-=======
->>>>>>> 55f4acf3b8ffcdb617aa32ca359efb96647ae803
 <!— Yandex.Metrika counter —>
 <script type="text/javascript" >
 (function (d, w, c) {

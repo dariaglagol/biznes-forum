@@ -2,7 +2,7 @@
   display: none;
   position: fixed;
   width: 350px;
-  max-height: 600px;
+  max-height: 520px;
   overflow-y: scroll;
   top: 75px;
   left: 50%;
@@ -14,7 +14,6 @@
 .reg_close {
   position: relative;
 }
-
 .reg_close::before,
 .reg_close::after {
   content: "";
