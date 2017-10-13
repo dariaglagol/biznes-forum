@@ -12,6 +12,10 @@
   box-shadow: 10px 10px 40px 14px rgba(0, 0, 0, 0.6);
 }
 
+#Sdorofeev {
+  top: 1000px;
+}
+
 .person-popup--hidden {
   display: none;
 }
@@ -140,16 +144,19 @@
     font-size: 21px;
   }
   #suhanov-speaker {
-    top: 15%;
+    top: 7%;
   }
   #magirovskij {
-    top: 34%;
+    top: 7%;
   }
   #tarabykina {
-    top: 50%;
+    top: 7%;
   }
   #korobkina {
-    top: 75%;
+    top: 7%;
+  }
+  #Sdorofeev {
+    top: 7%
   }
 }
 
@@ -171,13 +178,5 @@
   .person-popup__name {
     width: auto;
     font-size: 21px;
-  }
-  #suhanov-speaker,
-   #magirovskij{
-    top: 7%;
-  }
-  #tarabykina,
-  #korobkina{
-    top: 47%;
   }
 }
