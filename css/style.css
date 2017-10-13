@@ -1033,8 +1033,8 @@ body.open .reg-wrap {
 .speakers__wrap-inner {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 770px;
@@ -1476,6 +1476,9 @@ body.open .reg-wrap {
   background-color: #2c2c31;
   box-shadow: 10px 10px 40px 14px rgba(0, 0, 0, 0.6); }
 
+#Sdorofeev {
+  top: 1000px; }
+
 .person-popup--hidden {
   display: none; }
 
@@ -1584,13 +1587,15 @@ body.open .reg-wrap {
     width: 200px;
     font-size: 21px; }
   #suhanov-speaker {
-    top: 15%; }
+    top: 7%; }
   #magirovskij {
-    top: 34%; }
+    top: 7%; }
   #tarabykina {
-    top: 50%; }
+    top: 7%; }
   #korobkina {
-    top: 75%; } }
+    top: 7%; }
+  #Sdorofeev {
+    top: 7%; } }
 
 @media (min-width: 660px) and (max-width: 1200px) {
   .person-popup {
@@ -1605,13 +1610,7 @@ body.open .reg-wrap {
     right: -560px; }
   .person-popup__name {
     width: auto;
-    font-size: 21px; }
-  #suhanov-speaker,
-  #magirovskij {
-    top: 7%; }
-  #tarabykina,
-  #korobkina {
-    top: 47%; } }
+    font-size: 21px; } }
 
 .overlay {
   display: block;
