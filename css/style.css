@@ -1476,8 +1476,9 @@ body.open .reg-wrap {
   background-color: #2c2c31;
   box-shadow: 10px 10px 40px 14px rgba(0, 0, 0, 0.6); }
 
-#Sdorofeev {
-  top: 1000px; }
+#sdorofeev,
+#esokolova {
+  top: 950px; }
 
 .person-popup--hidden {
   display: none; }
@@ -1586,15 +1587,13 @@ body.open .reg-wrap {
   .person-popup__name {
     width: 200px;
     font-size: 21px; }
-  #suhanov-speaker {
-    top: 7%; }
-  #magirovskij {
-    top: 7%; }
-  #tarabykina {
-    top: 7%; }
-  #korobkina {
-    top: 7%; }
-  #Sdorofeev {
+  #suhanov-speaker,
+  #magirovskij,
+  #tarabykina,
+  #korobkina,
+  #Sdorofeev,
+  #zukova,
+  #esokolova {
     top: 7%; } }
 
 @media (min-width: 660px) and (max-width: 1200px) {

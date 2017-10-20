@@ -12,8 +12,9 @@
   box-shadow: 10px 10px 40px 14px rgba(0, 0, 0, 0.6);
 }
 
-#Sdorofeev {
-  top: 1000px;
+#sdorofeev,
+#esokolova {
+  top: 950px;
 }
 
 .person-popup--hidden {
@@ -143,21 +144,16 @@
     width: 200px;
     font-size: 21px;
   }
-  #suhanov-speaker {
+  #suhanov-speaker,
+  #magirovskij,
+  #tarabykina, 
+  #korobkina, 
+  #Sdorofeev,
+  #zukova,
+  #esokolova {
     top: 7%;
   }
-  #magirovskij {
-    top: 7%;
-  }
-  #tarabykina {
-    top: 7%;
-  }
-  #korobkina {
-    top: 7%;
-  }
-  #Sdorofeev {
-    top: 7%
-  }
+ 
 }
 
 @media(min-width: $tablet) and (max-width:$desktop) {

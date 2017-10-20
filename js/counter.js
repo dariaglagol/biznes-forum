@@ -1,6 +1,6 @@
 'use strict';
 (function() {
-  var targetDate = new Date('Oct 27, 2017 00:00:00');
+  var targetDate = new Date('Oct 26, 2017 10:00:00');
   initializeClock('countdown', targetDate);
   
   function getTimeRemaining(endtime) {
