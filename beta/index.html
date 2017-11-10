@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Бизнес-Форум</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="no-margin">
+  <header class="header">
+    <nav class="main-nav">
+      <div class="main-nav__wrap container">
+        <div class="main-nav__inner">
+          <div class="main-nav__logo"><!--img alt="Бизнес-форум Томск 2017" class="main-nav__pict" src="img/logo-top.png" width="189" height="73"--></div>
+          <div class="main-nav__item-list">
+            <a class="main-nav__item" href="#">Спикеры</a>
+            <a class="main-nav__item" href="#">Материалы</a>
+            <a class="main-nav__item" href="#">Участники</a>
+            <a class="main-nav__item" href="#">Программа</a>
+          </div>
+        </div>
+        <div class="header__take-part">
+          <span class="header_phone">979-335</span>       <button class="header__call" type="button">Принять участие</button>
+        </div>
+      </div>
+    </nav>
+    <div class="banner container">
+      <p class="banner__date">27 Октября <span class="banner__date--blur">2017</span></p>
+      <h1 class="banner__event">V региональный форум<br> молодых предпринимателей</h1>
+      <div class="banner__logo">
+        <img alt="Бизнес-форум Томск 2017" src="img/logo-big.png" width="515" height="198">
+      </div>
+      <button class="banner__button-take-part" type="button">Принять участие</button>
+    </div>
+  </header>
+  <main class="content-block"></main>
+  <footer class="footer container"></footer>
+  <div class="reg-wrap">
+  <div class="reg">
+	<div class="close-reg"><img src="img/close.png" onclick="$('body').removeClass('open')"></div>
+    <form action="ajax/first.php" method="post" class="first-form">
+    <h3 class="reg_header">Регистрация</h3>
+     <fieldset class="reg_first-form">
+       <label for="name" class="reg_label">ФИО:</label>
+       <input class="reg_input" type="text" name="user-name" id="name" required placeholder="Иванов Петр Сергеевич">
+       <label for="birthdate" class="reg_label">Дата рождения:</label>
+       <input class="reg_input" type="text" name="user-birthdate" id="birthdate" required placeholder="В формате 19.10.1987">
+	   <!-- pattern="[0-9]{2}.[0-9]{2}.[0-9]{4}" -->
+       <div class="reg_sex-block">
+         <p class="reg_label reg_sex-desc">Ваш пол: </p>
+         <input class="reg_input reg_input--sex" type="radio" id="sex-male" name="sex" value="male">
+         <label class="reg_label reg_label--sex" for="sex-male">Мужской</label>
+         <input class="reg_input reg_input--sex" type="radio" id="sex-female" name="sex" value="female">
+         <label class="reg_label reg_label--sex" for="sex-female">Женский</label>
+       </div>
+       <label for="phone" class="reg_label">Ваш телефон:</label>
+       <input class="reg_input" type="tel" name="user-phone" id="phone" placeholder="8 999 999 99 99" required>
+       <label for="e-mail" class="reg_label">Ваша почта:</label>
+       <input class="reg_input" type="email" name="user-email" id="e-mail" placeholder="yourMail@example.com" required>
+       <fieldset class="reg_org-block">
+         <label for="org_name" class="reg_label reg_label--select">Название и организацонная форма компании:</label>
+         <select class="reg_select" name="org_form" id="org_form">
+           <option value="ООО" selected>ООО</option>
+           <option value="ИП">ИП</option>
+           <option value="ОАО">ОАО</option>
+           <option value="ЗАО">ЗАО</option>
+           <option value="ПАО">ПАО</option>
+           <option value="ПТ">ПТ</option>
+           <option value="КТ">КТ</option>
+           <option value="ПК">ПК</option>
+           <option value="ОДО">ОДО</option>
+           <option value="КФХ">КФХ</option>
+         </select>
+         <input class="reg_input reg_input--org" type="text" name="org_name" id="org_name" placeholder="Квадрат">
+       </fieldset>
+       <label for="org_individual-tax-num" class="reg_label">ИНН:</label>
+       <input class="reg_input" type="text" name="org-individual-tax-num" id="org-individual-tax-num">
+       <input type="checkbox" name="agreement" required="" checked="" class="reg_agreement" id="agreement-checkbox">
+       <label for="agreement-checkbox" class="reg_agreement-label">Я подтверждаю свою дееспособность, гарантирую достоверность предоставленной информации, даю согласие на обработку своих персональных данных в соответствии с <a href="#" target="_blank">Условиями</a></label>
+       <button class="reg_submit" type="submit">Отправить</button>
+     </fieldset>
+	 </form>
+	 <form class="second-form" action="ajax/second.php">
+     <fieldset class="reg_second-form">
+		<div class="reg_agreement-label">Нам важно ваше мнение!<br>
+		Просьба ответить на вопросы ниже:
+		</div>
+       <label for="exp" class="reg_label only-org">Стаж предпринимательской деятельности:</label>
+       <select class="reg_select only-org" name="user-exp" id="exp">
+         <option value="до 1 года">до 1 года</option>
+         <option value="1-5 лет">1-5 лет</option>
+         <option value="более 5 лет">более 5 лет</option>
+       </select>
+       <label for="info" class="reg_label">Откуда узнали о мероприятии:</label>
+       <select class="reg_select" name="user-info" id="info">
+         <option value="Соцсети">Соцсети</option>
+         <option value="Иные источники сети Инттернет">Иные источники сети Интернет</option>
+         <option value="Сайт lidertomsk.ru">Сайт lidertomsk.ru</option>
+         <option value="Рассылка на электронную почту">Рассылка на электронную почту</option>
+         <option value="Рекомендации друзей, коллег, родственников">Рекомендации друзей, коллег </option>
+         <option value="Иное">Иное</option>
+       </select>
+       <button class="reg_submit" type="submit">Отправить</button>
+     </fieldset>
+    </form>
+  </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>

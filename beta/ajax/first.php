@@ -12,11 +12,6 @@ $required = array(
 	'user-email',
 );
 
-$fiz_type = array(
-	'worker' => 'Работающий',
-	'student' => 'Студент',
-);
-
 foreach($required as $row){
 	if(!$_POST[$row]){
 		$data['error'][] = $row;
@@ -32,19 +27,12 @@ if(!$data['error']){
 	$mail = mysql_real_escape_string($_POST['user-email']);
 	$org = mysql_real_escape_string($_POST['org_form']);
 	$company = mysql_real_escape_string($_POST['org_name']);
-	if($_POST['type'] == 'fiz'){
-		$fiz_type_ = $fiz_type[mysql_real_escape_string($_POST['fiz_type'])];
-		if($_POST['fiz_type'] == 'worker'){
-			$fiz_company = mysql_real_escape_string($_POST['fiz_company']);
-			$fiz_role = mysql_real_escape_string($_POST['fiz_role']);
-		}
-	}
 	$inn = mysql_real_escape_string($_POST['org-individual-tax-num']);
 	$hash = md5(time());
 	
 	mysql_query("INSERT INTO `lider__forumtomsk` 
-				(`date`,`fio`,`date_birthday`,`sex`,`phone`,`mail`,`org`,`company`,`inn`,`hash`,`fiz_type`,`fiz_company`,`fiz_role`) VALUES 
-				('$date','$fio','$date_birthday','$sex','$phone','$mail','$org','$company','$inn','$hash','$fiz_type_','$fiz_company','$fiz_role')
+				(`date`,`fio`,`date_birthday`,`sex`,`phone`,`mail`,`org`,`company`,`inn`,`hash`) VALUES 
+				('$date','$fio','$date_birthday','$sex','$phone','$mail','$org','$company','$inn','$hash')
 				");
 	$data['mysql_error'] = mysql_error();
 	$data['hash'] = $hash;
