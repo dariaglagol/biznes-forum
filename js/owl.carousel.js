@@ -115,7 +115,7 @@
 		/**
 		 * Widths of all items.
 		 */
-		this._widths = ['auto'];
+		this._widths = [];
 
 		/**
 		 * Invalidated parts within the update process.

@@ -15,6 +15,7 @@
   position: relative;
   display: inline-block;
   padding-right: 28px;
+  padding-top: 42px;
   font-family: $font-insert-plain;
   font-size: 18px;
   line-height: 26px;
@@ -22,7 +23,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 1px;
+    top: 42px;
     left: -22px;
     width: 18px;
     height: 23px;
@@ -62,6 +63,9 @@
     padding: 0;
     margin-left: 22px;
     font-size: 16px;
+    &::before {
+      top: 0;
+    }
   }
   .header__call {
     padding: 5px 10px 0px 10px;
