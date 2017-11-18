@@ -211,6 +211,13 @@ body.open .reg-wrap {
 @media (min-width: 769px) and (max-width: 1200px) {
   .header__take-part {
     max-width: 175px; }
+  .header__phone {
+    padding-right: 0px;
+    padding-top: 10px;
+    margin-right: -3px;
+    font-size: 16px; }
+    .header__phone::before {
+      top: 10px; }
   .header__call {
     font-size: 16px;
     padding: 14px 5px 0px 5px;
@@ -343,6 +350,9 @@ body.open .reg-wrap {
     background-color: #817f88; } }
 
 @media (min-width: 769px) and (max-width: 1200px) {
+  .main-nav__inner {
+    margin-left: -5px;
+    padding-top: 10px; }
   .main-nav__pict {
     width: 96px;
     height: 41px; }
@@ -1662,18 +1672,19 @@ body.open .reg-wrap {
   display: block;
   background-color: #b71642;
   width: 400px;
+  font-size: 15px;
   text-decoration: none; }
-
-@media (max-width: 660px) {
-  .gallery__item {
-    width: 320px; }
-  .gallery__link-arhive {
-    font-size: 14px;
-    width: 280px; } }
 
 @media (max-width: 1200px) {
   .gallery__item {
     width: 400px; }
   .gallery__link-arhive {
-    font-size: 18px;
     width: 360px; } }
+
+@media (max-width: 660px) {
+  .gallery__item {
+    width: 320px; }
+  .gallery__link-arhive {
+    padding: 7px;
+    font-size: 14px;
+    width: 280px; } }
